@@ -10,4 +10,24 @@ body {
 
 .main-header {
     background-color: #e7d8b9;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.navigation {
+    grid-column-start: 3;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+}
+
+/* select <a> inside .navigation */
+.navigation a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    background-color: bisque;
 }
